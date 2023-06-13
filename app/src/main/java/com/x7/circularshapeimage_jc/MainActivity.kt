@@ -99,16 +99,16 @@ fun circularshapeimageview() {
             User(R.drawable.img,"Sanjarbek","Assalomu Aleykum...","17:00"),
             User(R.drawable.img,"Davron","Assalomu Aleykum...","18:00"),
             User(
-                circlerimage = 1597,
+                circlerimage = R.drawable.img,
                 name = "Raquel Webster",
                 desc = "maximus",
                 time = "reprimique"
             ),
-            User(circlerimage = 7489, name = "Staci Franklin", desc = "erat", time = "adhuc"),
-            User(circlerimage = 3773, name = "Kasey Santana", desc = "liber", time = "consequat"),
-            User(circlerimage = 9350, name = "Ramiro Waters", desc = "tale", time = "eu"),
-            User(circlerimage = 8656, name = "Hilda Mercado", desc = "tristique", time = "dicunt"),
-            User(circlerimage = 7439, name = "James Madden", desc = "quas", time = "aliquid")
+            User(circlerimage = R.drawable.img, name = "Staci Franklin", desc = "erat", time = "adhuc"),
+            User(circlerimage = R.drawable.img, name = "Kasey Santana", desc = "liber", time = "consequat"),
+            User(circlerimage = R.drawable.img, name = "Ramiro Waters", desc = "tale", time = "eu"),
+            User(circlerimage = R.drawable.img, name = "Hilda Mercado", desc = "tristique", time = "dicunt"),
+            User(circlerimage = R.drawable.img, name = "James Madden", desc = "quas", time = "aliquid")
         )
 
         LazyColumn(contentPadding = PaddingValues(10.dp)
@@ -139,7 +139,7 @@ fun lazyitem1(user: User) {
        ){
            Row(modifier = Modifier.fillMaxWidth()) {
                Image(
-                   painter = painterResource(id = R.drawable.img),
+                   painter = painterResource(id = user.circlerimage),
                    contentDescription ="",
                    modifier = Modifier
                        .size(90.dp)
